@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anushah Nadir</title>
+<meta name="description" content="Anushah Nadir — M.S. Data Science, Hoseo University. Anomaly detection, computer vision, and uncertainty-aware machine learning." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c1c1a;
+    --soft:#41413d;
+    --muted:#8a8a84;
+    --rule:#e6e6e0;
+    --link:#3f6f68;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:#fdfdfb;color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;font-size:19px;line-height:1.62;font-weight:400;
+  }
+  .page{max-width:680px;margin:0 auto;padding:12vh 28px 15vh}
+
+  h1{font-size:32px;font-weight:600;letter-spacing:-.01em;margin:0 0 .3rem}
+  .subtitle{color:var(--soft);margin:0 0 .2rem;font-size:19px}
+  .place{color:var(--muted);margin:0 0 1rem;font-size:16px}
+  .contact{margin:0;font-size:16px;color:var(--muted)}
+  .contact a{color:var(--link);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .contact a:hover{border-color:var(--link)}
+  .dot{margin:0 .5rem;color:var(--rule)}
+
+  section{margin-top:3rem}
+  h2{
+    font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.16em;
+    color:var(--muted);margin:0 0 1.2rem;padding-bottom:.5rem;border-bottom:1px solid var(--rule);
+  }
+  p{margin:0 0 1rem}
+  p:last-child{margin-bottom:0}
+  .lede{font-size:20px;line-height:1.5}
+
+  .item{margin-bottom:1.5rem}
+  .item:last-child{margin-bottom:0}
+  .item .t{font-weight:600;font-size:19px}
+  .item .m{color:var(--muted);font-size:14px;font-weight:400}
+  .item .d{color:var(--soft);font-size:17px;line-height:1.55;margin-top:.2rem}
+
+  ul.plain{margin:0;padding:0;list-style:none}
+  ul.plain li{position:relative;padding-left:1.1rem;margin-bottom:.65rem;color:var(--soft);font-size:17px;line-height:1.5}
+  ul.plain li:last-child{margin-bottom:0}
+  ul.plain li::before{content:"–";position:absolute;left:0;color:var(--muted)}
+  ul.plain li b{color:var(--ink);font-weight:600}
+
+  a.inline{color:var(--link);text-decoration:none;border-bottom:1px solid var(--rule)}
+  a.inline:hover{border-color:var(--link)}
+  .ph{color:#b4b4ae;font-style:italic}
+  a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+  @media(max-width:640px){
+    body{font-size:18px}
+    .page{padding:8vh 22px 12vh}
+    h1{font-size:28px}
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+
+    <header>
+      <h1>Anushah Nadir</h1>
+      <p class="subtitle">M.S. Data Science, Hoseo University · Global Korea Scholarship</p>
+      <p class="place">Asan-si, South Korea</p>
+      <p class="contact">
+        <a href="mailto:anushahnadir@gmail.com">Email</a><span class="dot">·</span>
+        <a href="https://github.com/AnushahNadir">GitHub</a><span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/anushah-nadir-517201173">LinkedIn</a>
+      </p>
+    </header>
+
+    <section>
+      <p class="lede">I build machine-learning systems that learn what normal looks like and reason about what departs from it.</p>
+      <p>My research centers on anomaly detection and computer vision, with a consistent emphasis on models that are uncertainty-aware and interpretable rather than opaque — spanning industrial inspection, media forensics, and battery health. My broader interests include representation learning and large language models. I am a Global Korea Scholarship recipient completing an M.S. in Data Science at Hoseo University, with an earlier background in software and frontend development.</p>
+    </section>
+
+    <section>
+      <h2>Research &amp; Projects</h2>
+
+      <div class="item">
+        <div class="t">Few-shot industrial anomaly detection</div>
+        <div class="d">A patch-based, few-shot defect detector built on frozen DINOv2 features with a FiLM-conditioned reference of the normal manifold. Evaluated on MVTec AD under a 10-category-train / 5-unseen-category split to measure generalization to previously unseen defect types. Collaborative work with <span class="ph">a lab colleague — add name</span>. <a class="inline" href="https://github.com/AnushahNadir/anomaly-detection-few-shot">Code</a></div>
+      </div>
+
+      <div class="item">
+        <div class="t">Battery remaining-useful-life prediction</div>
+        <div class="d">A machine-learning ensemble predicting lithium-ion battery degradation with uncertainty quantification. A three-model architecture combining exponential-decay modeling, XGBoost, and a temporal convolutional network delivers robust predictions across operating conditions such as varying charge–discharge cycles and temperatures. Reliability and explainability come from conformal prediction and RAG-based analysis, validated with leave-one-battery-out cross-validation on the NASA / CALCE dataset (34 cells). Built with Python, PyTorch, TensorFlow, and scikit-learn.</div>
+      </div>
+
+      <div class="item">
+        <div class="t">Fruit freshness classification</div>
+        <div class="d">A lightweight computer-vision classifier for produce freshness using transfer learning with MobileNetV3, designed to run efficiently on constrained hardware.</div>
+      </div>
+
+      <div class="item">
+        <div class="t">Crypto Payroll</div>
+        <div class="d">A payroll platform built on cryptocurrency and blockchain technology, designed for secure and efficient disbursement. Implemented with ReactJS, NodeJS, and MySQL.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="t">M.S., Data Science — Hoseo University <span class="m">· Sep 2025 – Present</span></div>
+        <div class="d">Enrolled in the Data Science graduate program after completing the GKS language year and achieving TOPIK Level 3.</div>
+      </div>
+      <div class="item">
+        <div class="t">Korean Language Program — Hoseo University (GKS Scholar) <span class="m">· Sep 2024 – Aug 2025</span></div>
+        <div class="d">Awarded the Global Korea Scholarship (2024) by the South Korean government, funding a language year and Master's degree. Completed an intensive Korean year and reached TOPIK Level 3.</div>
+      </div>
+      <div class="item">
+        <div class="t">B.S., Computer Science — SZABIST University <span class="m">· Sep 2019 – Jun 2023</span></div>
+        <div class="d">Coursework included data structures, design and analysis of algorithms, probability and statistics, computer networks, parallel and distributed computing, artificial intelligence, information security, and game development.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <div class="t">Frontend Web Developer — Uexel Inc. <span class="m">· Islamabad, Pakistan · Aug 2023 – Aug 2024</span></div>
+        <div class="d">Built responsive, cross-browser web applications with React and TypeScript, developing interactive interfaces and integrating APIs and databases. Optimized code to reduce load times and leaned on TypeScript's type system to improve code quality and reduce runtime errors.</div>
+      </div>
+      <div class="item">
+        <div class="t">Technical Solutions Specialist — WellnessLiving <span class="m">· Islamabad, Pakistan · Jan 2023 – Jul 2023</span></div>
+        <div class="d">Resolved customer technical issues with the WellnessLiving platform and coordinated with internal teams to improve resolution times and customer satisfaction.</div>
+      </div>
+      <div class="item">
+        <div class="t">IT Audit Intern — KPMG <span class="m">· Islamabad, Pakistan · May 2022 – Oct 2022</span></div>
+        <div class="d">Supported IT audit planning and execution, documented audit procedures for a clear audit trail, and contributed to IT governance and security assessments.</div>
+      </div>
+      <div class="item">
+        <div class="t">IT Intern — Islamabad Serena Hotel <span class="m">· Islamabad, Pakistan · Aug 2021 – Sep 2021</span></div>
+        <div class="d">Provided hardware, software, and network support to staff and guests, and maintained systems through software updates and data backups.</div>
+      </div>
+      <div class="item">
+        <div class="t">Quality Assurance Intern — Touchstone <span class="m">· Remote, Pakistan · Dec 2020 – Feb 2021</span></div>
+        <div class="d">Executed manual test cases, documented defects for traceability, and worked with developers to strengthen defect detection before release.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="item">
+        <div class="t">Programming &amp; tools</div>
+        <div class="d">Python, Java, C++, JavaScript / TypeScript · React, Node.js · MySQL, MariaDB · PyTorch, TensorFlow, scikit-learn, XGBoost · Unity · Canva, Adobe Photoshop</div>
+      </div>
+      <div class="item">
+        <div class="t">Research areas</div>
+        <div class="d">Anomaly detection · Computer vision · Uncertainty quantification (conformal prediction) · Representation learning · Large language models</div>
+      </div>
+      <div class="item">
+        <div class="t">Languages</div>
+        <div class="d">English, Urdu, Hindi, Khowar · Korean (TOPIK Level 3)</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leadership &amp; Activities</h2>
+      <ul class="plain">
+        <li><b>Aspire Leaders Program</b> — leadership development with peers from diverse backgrounds.</li>
+        <li><b>Entrepreneurship Bootcamp</b>, National Incubation Center, Islamabad — entrepreneurial and problem-solving skills.</li>
+        <li><b>Pakistan Girl Guides Association</b> — progressed from Guide member to Leader, mentoring young girls and supporting community service.</li>
+        <li><b>Head of the Reading Club</b>, community center — organized reading activities to engage members.</li>
+        <li>Hosted the university convocation ceremony, coordinating event execution.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Volunteering</h2>
+      <ul class="plain">
+        <li><b>Mentor, Bridge Camp</b> (Aga Khan Schools) — study sessions and academic guidance for students.</li>
+        <li><b>Focus Humanitarian Assistance</b> — aid and support for communities during natural disasters.</li>
+        <li><b>Head of the Library</b>, community center — managed operations and organized reading activities.</li>
+        <li>Invigilator for AKU tests, supporting a fair examination process.</li>
+        <li>COVID-19 community volunteer — shared announcements and safety guidance to improve compliance.</li>
+        <li>Led logistics for a Girl Guides camp, coordinating resources and operations.</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
